@@ -2,8 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-olymp = pd.read_csv("athlete_events.csv", sep = ";") #Charge le fichier sous le nom olympics.
+#Fichier d'études des Jeux Olympiques dans le binks.
 
+olymp = pd.read_csv("athlete_events.csv", sep = ";") #Charge le fichier sous le nom olympics.
 """
 #----------------------------------------------------------------------------------
 #Quelle a été l'évolution du nombre d'athlètes aux JO d'été depuis leur création ?
