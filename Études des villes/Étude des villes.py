@@ -80,10 +80,11 @@ ville_evo = ville_evo.sort_values(by=["evo"], ascending=False)
 print (ville_evo)
 #----------------------------------------------------------------------------------
 """
+
 """
 #----------------------------------------------------------------------------------
-ville["alt_moy"]= round((ville["alt_min"] + ville["alt_max"])/2)
-ville_alt_moy = ville.loc[ville["dep"]!="alpha",["nb_hab_2012", "alt_moy"]].pivot_table(index="nb_hab_2012").fillna(0)
+ville["alt_moy"]= round((ville["alt_min"] + ville["alt_max"])/2, -2)
+ville_alt_moy = ville.loc[ville["dep"]!="alpha",["nb_hab_2012", "alt_moy"]].pivot_table(index="alt_moy").fillna(0)
 print(ville_alt_moy)
 plt.plot(ville_alt_moy)
 plt.show()
