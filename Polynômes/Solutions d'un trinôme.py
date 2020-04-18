@@ -5,10 +5,10 @@ def solutions(a, b, c):
 	Donne les solutions d'un polynômes.
 	Renvoie un message s'il n'y a aucune solution dans l'ensemble R.
 	"""
-	d = (b**2) - (4 * a * c) #Calcul du discriminant nommé d
+	d = (b**2) - (4 * a * c) #Calcul du discriminant nommé d.
 
 	if d < 0: #Test de condition pour voir si le discriminant est inférieur à zéro.
-		return "Il n'y a pas de solution dans l'ensemble R." #Si le discriminant est inférieur à zéro, il n'y a pas de solution dans R
+		return "Il n'y a pas de solution dans l'ensemble R." #Si le discriminant est inférieur à zéro, il n'y a pas de solution dans l'ensemble R.
 	elif d == 0: #Test de condition pour voir si le discriminant est égal à zéro.
 		x = (-b) / (2*a) #Si le discriminant est égal à zéro, il n'y à qu'une seule solution dans R, qui est égale à alpha. (-b / 2a).
 		return x #Renvoyer la solution contenue dans la variable x.
