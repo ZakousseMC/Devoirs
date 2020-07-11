@@ -1,8 +1,4 @@
 from math import *
-import sys
-
-#TAILLE MAXIMUM D'UNE LISTE / STR.
-print("La valeur maximum pour les strings ou liste est de :",sys.maxsize)
 
 #DEF PAIRIMPAIR
 def PairImpair(n):
